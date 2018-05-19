@@ -1,0 +1,2 @@
+# MIT: Introduction to C++ 
+Walkthrough and solutions to assignments of MIT Introduction of C++ course https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-096-introduction-to-c-january-iap-2011
