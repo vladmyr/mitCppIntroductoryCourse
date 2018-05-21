@@ -6,6 +6,19 @@
         {
             "label": "build",
             "type": "shell",
+            "osx": {
+                "command": "clang++",
+                "args": [
+                    "lecture004/Main.cpp",
+                    "-std=c++11",
+                    "-o",
+                    "lecture004/bin/lecture004.out"
+                ]
+            }
+        },
+        {
+            "label": "debug",
+            "type": "shell",
             "group": {
                 "kind": "build",
                 "isDefault": true
@@ -13,8 +26,12 @@
             "osx": {
                 "command": "clang++",
                 "args": [
-                    "lecture004/Main.cpp", "-std=c++11", "-g", "-o", "lecture004/bin/lecture004.out"
-                ],
+                    "lecture004/Main.cpp",
+                    "-std=c++11",
+                    "-g",
+                    "-o",
+                    "lecture004/bin/lecture004.out"
+                ]
             }
         }
     ]
