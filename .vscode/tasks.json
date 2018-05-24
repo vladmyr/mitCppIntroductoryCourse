@@ -4,19 +4,6 @@
     "version": "2.0.0",
     "tasks": [
         {
-            "label": "build",
-            "type": "shell",
-            "osx": {
-                "command": "clang++",
-                "args": [
-                    "lecture004/Main.cpp",
-                    "-std=c++11",
-                    "-o",
-                    "lecture004/bin/lecture004.out"
-                ]
-            }
-        },
-        {
             "label": "debug",
             "type": "shell",
             "group": {
@@ -26,11 +13,12 @@
             "osx": {
                 "command": "clang++",
                 "args": [
-                    "lecture004/Main.cpp",
+                    "-v",
                     "-std=c++11",
                     "-g",
                     "-o",
-                    "lecture004/bin/lecture004.out"
+                    "lecture006/bin/lecture006.out",
+                    "lecture006/Main.cpp"
                 ]
             }
         }

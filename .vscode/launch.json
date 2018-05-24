@@ -5,23 +5,10 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "(lldb) Launch",
-            "type": "cppdbg",
-            "request": "launch",
-            "program": "${workspaceFolder}/lecture004/bin/lecture004.out",
-            "args": [],
-            "stopAtEntry": false,
-            "cwd": "${workspaceFolder}",
-            "environment": [],
-            "externalConsole": true,
-            "MIMode": "lldb",
-            "preLaunchTask": "build"
-        },
-        {
             "name": "(lldb) Debug",
             "type": "cppdbg",
             "request": "launch",
-            "program": "${workspaceFolder}/lecture004/bin/lecture004.out",
+            "program": "${workspaceFolder}/lecture006/bin/lecture006.out",
             "args": [],
             "stopAtEntry": false,
             "cwd": "${workspaceFolder}",

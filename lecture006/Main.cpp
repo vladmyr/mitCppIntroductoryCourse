@@ -1,39 +1,9 @@
 #include <iostream>
 
+#include "Point.hpp"
+#include "Vector.hpp"
+
 using namespace std;
-
-class Point {
-public:
-    double x;
-    double y;
-
-    void offset (double offsetX, double offsetY) {
-        x += offsetX;
-        y += offsetY;
-    }
-
-    void print () {
-        cout << "(" << x << ", " << y << ")";
-    }
-};
-
-class Vector {
-public:
-    Point start;
-    Point end;
-
-    void offset (double offsetX, double offsetY) {
-        start.offset (offsetX, offsetY);
-        end.offset (offsetX, offsetY);
-    }
-
-    void print () {
-        start.print ();
-        cout << " -> ";
-        end.print ();
-        cout << endl;
-    }
-};
 
 /**
  * Passing classes to functions
@@ -74,12 +44,21 @@ int main () {
     pureOffsetPoint (vector1.start, 1.2, 3.9);
 
     cout << "Use pureOffsetPoint to try to modive vecto values: ";
-    print (vector1);
+    vector1.print();
     
     impureOffsetPoint (vector1.start, 1.2, 3.9);
 
     cout << "Use impureOffsetPoint to try to modive vecto values: ";
-    print (vector1);
+    vector1.print();
+
+    /**
+     * Using constructors
+     */
+    Point p(4.5, 6.3);
+    Point q = p;    // uses copy constructor
+
+    p.print();
+    q.print();
 
     cin.clear ();
     cin.ignore (32767, '\n');
